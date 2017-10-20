@@ -6,7 +6,6 @@ SELECT player.ID, player.lastName, batting.playerID, batting.battingAvg FROM pla
 ON player.ID = batting.playerID;
 */
 
- 
 /*Create a SELECT statement that joins the roster table and the 
 team table. The query should display all the teams and any matching
  players within the roster table. You should see NULL when there are 
@@ -18,6 +17,7 @@ ON roster.teamID = team.ID;*/
 SELECT team.ID, team.teamName, roster.teamID, roster.playerID FROM team JOIN roster 
 ON roster.teamID = team.ID;*/
 
-/*Create a query that displays teams that do not have players on a roster.*/
+/*Create a query that displays teams that do not have players on a roster.
 SELECT team.* FROM team LEFT JOIN roster 
-ON roster.teamID = team.ID WHERE roster.playerID IS NULL;
+ON roster.teamID = team.ID WHERE roster.playerID IS NULL;*/
+
