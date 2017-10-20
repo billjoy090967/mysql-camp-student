@@ -365,3 +365,15 @@ FROM baseball.roster R
 INNER JOIN baseball.team T ON R.teamID = T.ID
 INNER JOIN baseball.player P on R.playerID = P.ID
 ;
+Select * from player;
+Select * from team;
+Select * from batting;
+Select * from roster;
+
+SELECT team.ID
+, team.TeamName
+, batting.TeamID
+, batting.Rank
+, batting.BattingAvg
+FROM team
+INNER JOIN batting ON team.ID = batting.TeamID;
